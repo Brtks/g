@@ -27,7 +27,7 @@ function done() {
 	}
 }
 function reload() {
-	window.location.href = "/randomgame"
+	window.location.href = "/content/randomgame"
 }
 
 function hint() {
