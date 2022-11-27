@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@700&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	flex-direction: column;
+	color: #fff;
+	background: radial-gradient(#000, #122225);
+	overflow: hidden;
+	animation: bd ease-out 10s infinite;
+	font-family: 'Montserrat';
+	text-align: center;
+}
+
+@keyframes bd {
+	from{ 
+		backdrop-filter: hue-rotate(0deg);
+	}
+	to {
+		backdrop-filter: hue-rotate(-60deg);
+	}
+}
+
+@keyframes bg {
+	from {
+		transform: rotate(0deg);
+		filter: hue-rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		filter: hue-rotate(-60deg);
+	}
+}
+
+@keyframes all-off {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes all {
+	0%, 20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes bgall {
+	0%, 50% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+div {
+	display: flex;
+	align-items: center;
+}
+
+#bg {
+	position: absolute;
+	z-index: -1;
+	height: 50vw;
+	max-height: 500px;
+	opacity: 0.2;
+	animation: bg ease-out 10s infinite, bgall ease-out 1.5s;
+}
+
+h1 {
+	margin: 5px;
+	animation: all 1s ease;
+	font-size: 35px;
+}
+
+b {
+	font-family: 'Poppins';
+	color: #0f0;
+	letter-spacing: -2px;
+	animation: all-off 0.7s ease;
+	font-size: 35px;
+	margin: 5px
+}
+
+h3 {
+	margin: 20px;
+	opacity: 0.5;
+	letter-spacing: -2px;
+	color: #0a0;
+	animation: all 1s ease;
+}
+
+input {
+	border-radius: 100px;
+	height: 25px;
+	margin-bottom: 25px;
+	border: none;
+	padding-left: 7px;
+	padding-right: 7px;
+	animation: all 1s ease;
+}
+
+input:focus {
+	outline: 0;
+}
+
+button {
+	background: none;
+	border: #fff 3px solid;
+	border-radius: 100px;
+	padding: 5px;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin: 10px;
+	width: 100px;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	animation: all 1s ease;
+}
+
+p {
+	font-size: 20px;
+	animation: all 1s ease;
+}
+
+.back {
+	text-decoration: none;
+	font-family: 'Poppins';
+	font-size: 25px;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	cursor: pointer;
+	color: #0f0;
+	animation: all 1s ease;
+}
+
+span {
+	position: relative;
+	left: 0px;
+	transition: left ease-out 0.3s;
+}
+
+.back:hover span {
+	left: -10px;
+}

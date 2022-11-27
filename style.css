@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@700&display=swap');
+
+@keyframes text {
+  from {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes text2 {
+  0%, 25% {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: .75;
+  }
+}
+
+@keyframes img {
+  0% {
+    transform: rotate(350deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes txt1 {
+  0%, 30% {
+    opacity: 0;
+    font-size: 18px;
+  }
+  40% {
+    opacity: 1;
+    font-size: 18px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+@keyframes txt2 {
+  0%, 50% {
+    opacity: 0;
+    font-size: 18px;
+  }
+  60% {
+    opacity: 1;
+    font-size: 18px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+@keyframes txt3 {
+  0%, 70% {
+    opacity: 0;
+    font-size: 18px;
+  }
+  80% {
+    opacity: 1;
+    font-size: 18px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+@keyframes dot {
+  0%,50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background: radial-gradient(rgb(20, 30, 60), rgb(20, 30, 30));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: #aff;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins';
+  letter-spacing: 5px;
+  margin: 5px;
+  animation: text 0.5s ease-out;
+}
+
+h3 {
+  letter-spacing: -1.6px;
+  margin: 5px;
+  animation: text2 0.75s ease-out;
+  opacity: 0.75;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  animation: img 0.75s ease-in-out;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5))
+}
+
+div {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 50px;
+}
+
+a {
+  color: #eff;
+  text-decoration: none;
+  line-height: 10px;
+  font-size: 16px; 
+  letter-spacing: 0;
+  transition: letter-spacing 0.1s ease-out;
+}
+
+a:hover {
+  font-family: 'Poppins';
+  letter-spacing: 2.5px;
+}
+
+div:hover span {
+  opacity: 0;
+}
+
+div a:hover, div a:hover ~ span {
+  opacity: 1;
+}
+
+div a:hover ~ span {
+  opacity: 0;
+}
+
+span {
+  animation: dot 2.75s ease-out;
+  transition: opacity 0.5s ease-out;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Handlee&display=swap');
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	height: 100vh;
+	background: #ffe;
+	font-family: 'Handlee'
+}
+
+p {
+	position: relative;
+}
+
+img {
+	position: absolute;
+	z-index: -1;
+}
+
+#title {
+	color: #fff;
+	text-shadow: 0px 0px 5px #000;
+	top: 25px;
+	font-size: 50px;
+	font-family: 'Handlee';
+	max-width: 400px;
+	overflow: hidden;
+}
+
+#author {
+	color: #fff;
+	top: 120px;
+	right: -150px;
+	font-family: 'Gochi Hand';
+	letter-spacing: 1px;
+}
+
+input, button {
+	margin: 5px;
+	border-radius: 10px;
+	border: 2px solid #aa0;
+	background: none;
+	padding: 5px;
+}
+
+button {
+	color: #aa0;
+	background: rgba(255, 255, 0, 0.2);
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.5;
+}
+
+.back {
+	text-decoration: none;
+	font-family: 'Poppins';
+	font-size: 25px;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	cursor: pointer;
+	animation: none;
+	font-family: 'Handlee';
+	color: #aa0;
+}
+
+span {
+	position: relative;
+	left: 0px;
+	transition: left ease-out 0.3s;
+}
+
+.back:hover span {
+	left: -10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RANDOM LUCK GAME</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/img/luck-i.png"/>
+</head>
+<body>
+  <div><h1>RANDOM </h1><b>LUCK</b></h1><h1> GAME</h1><h1></h1></div>
+  <h3>( by TheBrtks )</h3>
+
+  <p>test your <f style="color: #afa">luck</f> by putting a number ( 0 - 10 ) below</p>
+
+  <input type="number" id="number" max="10">
+	<button id="done-button" onclick="done()">Done!</button>
+
+  <p id="wr"></p>
+
+  <div><button onclick="hint()" id="hint-btn">Hint?</button>
+	<button onclick="give()" id="give-btn">Give Up</button></div>
+  <p id="hint-txt"></p>
+
+  <img src="/img/luck.svg" id="bg">
+
+  <a href="/" class="back"> <span><-</span> DRIVE BACK TO MAIN</a>
+
+	<script src="script.js"></script>
+</body>
+</html>
