@@ -36,6 +36,17 @@ body {
 	}
 }
 
+@keyframes back {
+  from {
+    position: absolute;
+    left: -500px;
+  }
+  to {
+    position: absolute;
+    left: 30px;
+  }
+}
+
 ::selection {
 	background: #0ef;
 	color: #000;
@@ -72,7 +83,6 @@ br {
 
 a {
 	color: #aff;
-	animation: all 0.5s ease-out;
 }
 
 a:hover {
@@ -87,7 +97,7 @@ a:hover {
 	bottom: 10px;
 	left: 30px;
 	cursor: pointer;
-	animation: none;
+	animation: back 1s ease-out;
 }
 
 span {

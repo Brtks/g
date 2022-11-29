@@ -15,6 +15,10 @@ body {
 	text-align: center;
 }
 
+::selection {
+	background: rgba(50, 255, 75, 0.5);
+}
+
 @keyframes bd {
 	from{ 
 		backdrop-filter: hue-rotate(0deg);
@@ -94,6 +98,11 @@ b {
 	margin: 5px
 }
 
+b::selection {
+	background: #0f0;
+	color: #000;
+}
+
 h3 {
 	margin: 20px;
 	opacity: 0.5;
@@ -156,4 +165,12 @@ span {
 
 .back:hover span {
 	left: -10px;
+}
+
+#hint-btn {
+	display: none;
+}
+
+#give-btn {
+	display: none;
 }

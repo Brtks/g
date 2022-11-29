@@ -7,12 +7,12 @@
   <link rel="icon" href="/img/luck-i.png"/>
 </head>
 <body>
-  <div><h1>RANDOM </h1><b>LUCK</b></h1><h1> GAME</h1><h1></h1></div>
+  <div><h1>RANDOM </h1><b>LUCK</b></h1><h1> GAME</h1></div>
   <h3>( by TheBrtks )</h3>
 
   <p>test your <f style="color: #afa">luck</f> by putting a number ( 0 - 10 ) below</p>
 
-  <input type="number" id="number" max="10">
+  <input type="number" id="number" max="10" min="0">
 	<button id="done-button" onclick="done()">Done!</button>
 
   <p id="wr"></p>
@@ -21,7 +21,7 @@
 	<button onclick="give()" id="give-btn">Give Up</button></div>
   <p id="hint-txt"></p>
 
-  <img src="/img/luck.svg" id="bg">
+  <img src="/img/luck.svg" id="bg" draggable="false">
 
   <a href="/" class="back"> <span><-</span> DRIVE BACK TO MAIN</a>
 

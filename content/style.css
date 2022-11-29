@@ -10,7 +10,7 @@ body {
   margin: 0;
   color: #aff;
   font-family: 'Montserrat';
-  text-align: center;
+	text-align: left;
 }
 
 @keyframes h1 {
@@ -24,7 +24,7 @@ body {
 	}
 }
 
-@keyframes h3 {
+@keyframes all {
 	from {
 		opacity: 0;
 		position: relative;
@@ -33,18 +33,6 @@ body {
 	to {
 		position: relative;
 		top: 0px;
-	}
-}
-
-@keyframes div {
-  from {
-		opacity: 0;
-		position: relative;
-		left: -15px;
-	}
-	to {
-		position: relative;
-		left: 0px;
 	}
 }
 
@@ -59,37 +47,47 @@ body {
   }
 }
 
+::selection {
+	background: #0ef;
+	color: #000;
+}
+
+
 h1 {
   font-family: 'Poppins';
   letter-spacing: 5px;
   margin: 5px;
-  animation: h1 0.5s ease-out;
+  animation: text 0.5s ease-out, h1 1.5s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
 h3 {
   letter-spacing: -1.6px;
   margin: 5px;
-  margin-bottom: 30px;
-  animation: h3 0.75s ease-out;
+  animation: text2 0.75s ease-out;
   opacity: 0.75;
+	margin-bottom: 50px;
+	animation: all 0.5s ease-out;
+}
+
+p {
+	font-size: 20px;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	line-height: 20px;
+	animation: all 0.5s ease-out;
+}
+
+br {
+	height: 0px;
 }
 
 a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #aff;
-  display: block;
-  margin: 10px;
-  transition: opacity 0.2s ease;
+	color: #aff;
+  animation: all 0.5s ease;
 }
 
 a:hover {
-  opacity: 0.5;
-}
-
-div {
-  text-align: left;
-  animation: div 0.5s ease-out;
+	text-decoration: none;
 }
 
 .back {

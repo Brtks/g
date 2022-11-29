@@ -13,11 +13,6 @@ body {
 	text-align: left;
 }
 
-::selection {
-	background: #0ef;
-	color: #000;
-}
-
 @keyframes h1 {
 	from {
 		opacity: 0;
@@ -41,19 +36,37 @@ body {
 	}
 }
 
+@keyframes back {
+  from {
+    position: absolute;
+    left: -500px;
+  }
+  to {
+    position: absolute;
+    left: 30px;
+  }
+}
+
+::selection {
+	background: #0ef;
+	color: #000;
+}
+
+
 h1 {
   font-family: 'Poppins';
   letter-spacing: 5px;
   margin: 5px;
-  animation: h1 0.5s ease-out;
+  animation: text 0.5s ease-out, h1 1.5s cubic-bezier(.68,-0.55,.27,1.55);
 }
 
 h3 {
   letter-spacing: -1.6px;
   margin: 5px;
-  animation: all 0.75s ease-out;
+  animation: text2 0.75s ease-out;
   opacity: 0.75;
 	margin-bottom: 50px;
+	animation: all 0.5s ease-out;
 }
 
 p {
@@ -61,31 +74,20 @@ p {
 	margin-left: 20vw;
 	margin-right: 20vw;
 	line-height: 20px;
-  animation: all 0.75s ease-out;
+	animation: all 0.5s ease-out;
+}
+
+br {
+	height: 0px;
 }
 
 a {
 	color: #aff;
+	animation: all 0.5s ease;
+}
+
+a:hover {
 	text-decoration: none;
-	position: relative;
-  cursor: default;
-  animation: all 0.75s ease-out;
-}
-
-#dc {
-  cursor: default;
-  animation: all 0.75s ease-out;
-}
-
-#dc:after {
-	content: 'TheBrtks#1276';
-	position: absolute;
-	margin-left: 20px;
-	opacity: 0.5;
-}
-
-#dc:hover #dc:after {
-	opacity: 1;
 }
 
 .back {
@@ -96,15 +98,15 @@ a {
 	bottom: 10px;
 	left: 30px;
 	cursor: pointer;
-	animation: none;
+	animation: back 1s ease-out;
 }
 
-#arr {
+span {
 	position: relative;
 	left: 0px;
 	transition: left ease-out 0.3s;
 }
 
-.back:hover #arr {
+.back:hover span {
 	left: -10px;
 }

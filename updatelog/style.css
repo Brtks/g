@@ -1,0 +1,45 @@
+body {
+  background: radial-gradient(#001000, #000500);
+  min-height: calc(100vh - 20px);
+  margin: 0;
+  font-family: monospace;
+  color: #0f0;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0;
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 25px;
+  width: 75vw;
+}
+
+li {
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.back {
+	text-decoration: none;
+	font-size: 25px;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	cursor: pointer;
+	animation: back 1s ease-out;
+  color: #0f0;
+}
+
+span {
+	position: relative;
+	left: 0px;
+}
+
+.back:hover span {
+	left: -10px;
+}
